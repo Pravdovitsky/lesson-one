@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task-three</title>
+</head>
+<body>
+    <script>
+        let a = +prompt('Введите число a');
+        let b = +prompt('Введите число b');
+
+        if ( isNaN(a) || isNaN(b)) {
+            alert('Вы указали неверное значение!');
+            throw 'Неверное значение!'
+        } else {
+            if(a > b) {
+                alert(`Разность чисел: ${a - b}`)
+            } else {
+                alert(`Сумма чисел: ${a + b}`)
+            }
+        }
+    </script>
+</body>
+</html>
